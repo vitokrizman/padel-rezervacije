@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Padel rezervacije</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+ <nav class="nav">
+ <a class="logo" href="index.html">
+  <img src="svg/logo.svg" alt="Padel rezervacije logo" height="28">
+</a>
+
+  <button class="nav-toggle" type="button" aria-label="Otvori izbornik" aria-expanded="false">
+    ☰
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="o-nama.html">O nama</a></li>
+    <li><a href="rezervacija.html" class="active">Rezervacija</a></li>
+    <li><a href="galerija.html">Galerija</a></li>
+    <li><a href="cjenik.html">Cjenik</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<script src="js/main.js"></script>
+</div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Rezervacija termina</h1>
+      <p style="color: var(--muted); max-width: 70ch;">
+        Ispuni formu i dobit ćeš sažetak rezervacije. Za grupne termine i turnire pogledaj
+        <a href="kontakt.html">kontakt</a>.
+      </p>
+
+      <div class="grid-2">
+        
+        <div class="card">
+          <h2>Podaci o rezervaciji</h2>
+
+          <form id="bookingForm" novalidate>
+            <div class="field">
+              <label for="fullName">Ime i prezime</label>
+              <input id="fullName" name="fullName" type="text" placeholder="npr. Ivan Horvat" required />
+              <small class="hint">Obavezno polje</small>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="npr. ivan@mail.com" required />
+              <small class="hint">Poslat ćemo potvrdu na e-mail</small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="npr. +385 99 123 4567" required />
+              <small class="hint">Za brzi kontakt</small>
+            </div>
+
+            <div class="field">
+              <label for="date">Datum</label>
+              <input id="date" name="date" type="date" required />
+              <small class="hint">Odaberi datum</small>
+            </div>
+
+            <div class="field">
+              <label for="time">Vrijeme</label>
+              <select id="time" name="time" required>
+                <option value="">Odaberi vrijeme</option>
+                <option>07:00</option><option>08:30</option><option>10:00</option>
+                <option>11:30</option><option>13:00</option><option>14:30</option>
+                <option>16:00</option><option>17:30</option><option>19:00</option>
+                <option>20:30</option><option>22:00</option>
+              </select>
+              <small class="hint">Termini su 90 min</small>
+            </div>
+
+            <div class="field">
+              <label for="court">Teren</label>
+              <select id="court" name="court" required>
+                <option value="">Odaberi teren</option>
+                <option value="Indoor 1">Indoor 1</option>
+                <option value="Outdoor 1">Outdoor 1</option>
+              </select>
+              <small class="hint">Indoor je idealan zimi</small>
+            </div>
+
+            <div class="field">
+              <label for="players">Broj igrača</label>
+              <select id="players" name="players" required>
+                <option value="">Odaberi</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+              </select>
+              <small class="hint">Standard je 4</small>
+            </div>
+
+            <div class="field">
+              <label for="note">Napomena (opcionalno)</label>
+              <textarea id="note" name="note" rows="3" placeholder="npr. Trebamo rekete..."></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Prikaži sažetak</button>
+
+            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        
+        <div class="card">
+          <h2>Sažetak rezervacije</h2>
+          <div id="summary" class="summary">
+            <p style="color: var(--muted);">Ispuni formu da vidiš sažetak i procjenu cijene.</p>
+          </div>
+
+          <div class="card" style="margin-top:14px;">
+            <h3 style="margin-top:0;">Cijene</h3>
+            <ul style="margin:0; padding-left:18px; color: var(--muted);">
+              <li>Radni dan: 18 € / termin</li>
+              <li>Vikend: 22 € / termin</li>
+              <li>Popust: -10% ako rezerviraš 3+ termina (ručno dogovor u kontaktu)</li>
+            </ul>
+            <p style="margin-bottom:0; color: var(--muted);">
+              Pogledaj detalje na <a href="cjenik.html">cjeniku</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">
+  <p>&copy; 2026 Padel centar</p>
+  </div>
+</footer>
+
+</body> 
+</html>

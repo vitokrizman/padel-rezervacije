@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+  <nav class="nav">
+  <a class="logo" href="index.html">
+  <img src="svg/logo.svg" alt="Padel rezervacije logo" height="28">
+</a>
+
+
+  <button class="nav-toggle" type="button" aria-label="Otvori izbornik" aria-expanded="false">
+    ☰
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="o-nama.html">O nama</a></li>
+    <li><a href="rezervacija.html">Rezervacija</a></li>
+    <li><a href="galerija.html">Galerija</a></li>
+    <li><a href="cjenik.html">Cjenik</a></li>
+    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+  </ul>
+</nav>
+
+<script src="js/main.js"></script>
+</div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p style="color: var(--muted); max-width:70ch;">
+        Imaš pitanje ili želiš grupnu rezervaciju? Slobodno nam se javi.
+      </p>
+
+      <div class="grid-2">
+        
+        <div class="card">
+          <h2>Padel rezervacije</h2>
+
+          <p><strong>📍 Adresa:</strong><br>Boćarski dom, Podvežica / Rijeka</p>
+          <p><strong>📞 Telefon:</strong><br>+385 95 852 9852</p>
+          <p><strong>✉️ E-mail:</strong><br>info@padel-rezervacije.hr</p>
+          <p><strong>⏰ Radno vrijeme:</strong><br>Pon–Ned: 07:00 – 23:00</p>
+        </div>
+
+        
+        <div class="card">
+          <h2>Pošalji upit</h2>
+
+          <form>
+            <div class="field">
+              <label for="name">Ime</label>
+              <input type="text" id="name" placeholder="Vaše ime" required>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Vaš e-mail" required>
+            </div>
+
+            <div class="field">
+              <label for="message">Poruka</label>
+              <textarea id="message" rows="4" placeholder="Vaša poruka"></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Pošalji</button>
+          </form>
+        </div>
+      </div>
+
+    
+      <div class="section">
+
+
+<footer class="site-footer">
+    <div class="container">
+  <p>&copy; 2026 Padel centar</p>
+  </div>
+</footer>
+
+</body>
+</html>

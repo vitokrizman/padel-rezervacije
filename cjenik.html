@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cjenik</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+  <nav class="nav">
+  <a class="logo" href="index.html">
+  <img src="svg/logo.svg" alt="Padel rezervacije logo" height="28">
+</a>
+
+
+  <button class="nav-toggle" type="button" aria-label="Otvori izbornik" aria-expanded="false">
+    ☰
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="o-nama.html">O nama</a></li>
+    <li><a href="rezervacija.html">Rezervacija</a></li>
+    <li><a href="galerija.html">Galerija</a></li>
+    <li><a href="cjenik.html" class="active">Cjenik</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<script src="js/main.js"></script>
+</div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Cjenik</h1>
+      <p style="color: var(--muted); max-width: 70ch;">
+        Cijene su po terminu (90 min). Za rezervaciju idi na
+        <a href="rezervacija.html">Rezervacija</a>.
+      </p>
+
+      <div class="grid-2" style="grid-template-columns: 1fr 1fr;">
+        
+        <div class="card">
+          <h2>Termini</h2>
+
+          <div class="table-wrap">
+            <table class="price-table" aria-label="Cjenik termina">
+              <thead>
+                <tr>
+                  <th>Vrsta termina</th>
+                  <th>Vrijedi</th>
+                  <th>Cijena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Radni dan</td>
+                  <td>Pon–Pet</td>
+                  <td><strong>18 €</strong></td>
+                </tr>
+                <tr>
+                  <td>Vikend</td>
+                  <td>Sub–Ned</td>
+                  <td><strong>22 €</strong></td>
+                </tr>
+                <tr>
+                  <td>Reket (najam)</td>
+                  <td>po komadu</td>
+                  <td><strong>3 €</strong></td>
+                </tr>
+                <tr>
+                  <td>Loptice</td>
+                  <td>tuba</td>
+                  <td><strong>6 €</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p style="margin-top:12px; color: var(--muted);">
+            Napomena: Informativne cijene. Za turnire i grupne termine javi se preko
+            <a href="kontakt.html">Kontakta</a>.
+          </p>
+        </div>
+
+       
+        <div class="card">
+          <h2>Popusti</h2>
+          <ul style="margin:0; padding-left:18px; color: var(--muted);">
+            <li>-10% za 3+ termina (dogovor putem kontakta)</li>
+            <li>Studentski popust uz predočenje iskaznice</li>
+            <li>Paketi treninga za početnike i napredne</li>
+          </ul>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+            <a class="btn primary" href="rezervacija.html">Rezerviraj termin</a>
+            <a class="btn ghost" href="o-nama.html">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div style="margin-top:16px; display:grid; gap:14px; grid-template-columns: repeat(3, 1fr);">
+        <div class="card">
+          <h3 style="margin-top:0;">Start paket</h3>
+          <p style="color: var(--muted);">2 termina + najam reketa</p>
+          <p><strong>40 €</strong></p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Duo paket</h3>
+          <p style="color: var(--muted);">4 termina (idealno za par)</p>
+          <p><strong>72 €</strong></p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Team paket</h3>
+          <p style="color: var(--muted);">6 termina + -10% na opremu</p>
+          <p><strong>118 €</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+    <div class ="container">
+  <p>&copy; 2026 Padel centar</p>
+  </div>
+</footer>
+
+</body>
+</html>
